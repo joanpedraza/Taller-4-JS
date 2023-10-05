@@ -7,7 +7,7 @@
     
     <title>Formulario punto 1</title>
 </head>
-<body>
+<body onload="disable();colordisable();">
 
     <div id="division">
     <h3>Formulario</h3>
@@ -60,6 +60,23 @@
         <option value="Venezuela">Venezuela</option> 
     </select>
     <br/>
+
+    <br/> Panel de Gustos <br/>
+    <input onclick="able();colorable();" type="radio" name="acceso" id="accesogustos">Acceder <br/>
+    <div class="gustos">
+        Color favorito <br/>
+        <input id="gustoscolor" type="text" name="colorfav" value="" size="50">
+        <br/>
+        Marca de carro favorita <br/>
+        <input id="gustosmarca" type="text" name="marcafav" value="" size="50">
+        <br/>
+        Estilo de carro favorita <br/>
+        <input id="gustosestilo" type="text" name="estilofav" value="" size="50">
+        <br/>
+        Modelo de carro que más le gusta <br/>
+        <input id="gustosmodelo" type="text" name="modelofav" value="" size="50">
+    </div>
+
     </fieldset>
     <br/>
 
