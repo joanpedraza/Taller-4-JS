@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="usercss.css">
+    
     <title>Formulario punto 1</title>
 </head>
 <body>
@@ -11,31 +12,31 @@
     <div id="division">
     <h3>Formulario</h3>
 
-    <form action="" method="post">
+    <form action="" method="post" id="form">
     
     <fieldset><legend>Datos Personales</legend>
     Nombre <br/>
-    <input type="text" name="nombre" value="" size="30" maxlength="25" />
+    <input type="text" name="nombre" id="name" value="" size="30" maxlength="25" />
     <br/>
 
     Apellidos <br/>
-    <input type="text" name="apellidos" value="" size="30" maxlength="25" />
+    <input type="text" name="apellidos" id="apellidos" value="" size="30" maxlength="25" />
     <br/>
 
     Dirección <br/>
-    <input type="text" name="direccion" value="" size="50" maxlength="45" />
+    <input type="text" name="direccion" id="direccion" value="" size="50" maxlength="45" />
     <br/>
 
     Telefono <br/>
-    <input type="text" name="telefono" value="" size="50" maxlength="45" />
+    <input type="text" name="telefono" id="telefono" value="" size="50" maxlength="45" />
     <br/>
 
     Email <br/>
-    <input type="text" name="email" value="" size="50" maxlength="45" />
+    <input type="email" name="email" id="email" value="" size="50" maxlength="120" />
     <br/>
 
     Pais <br/>
-    <select name="Escoger el pais">
+    <select name="Escoger el pais" id="pais">
         <option value="Argentina">Argentina</option> 
         <option value="Bolivia">Bolivia</option> 
         <option value="Chile">Chile</option> 
@@ -64,21 +65,24 @@
 
     <fieldset><legend>Datos de Login</legend>
     Nombre de usuario <br/>
-    <input type="text" name="nusuario" value="" size="30" maxlength="20">
+    <input type="text" name="nusuario" id="nusuario" value="" size="30" maxlength="20">
     <br/>
 
     Contraseña <br/>
-    <input type="password" name="contrasena" value="" size="30" />
+    <input type="password" name="contrasena" id="password" value="" size="30" />
     <br/>
 
     Confirmar Contraseña <br/>
-    <input type="password" name="comcontrasena" value="" size="30" />
+    <input type="password" name="comcontrasena" id="Vpassword" value="" size="30" />
     <br/>
     </fieldset>
     <br/>
-    <input type="submit" name="enviar" value="Guardar cambios" />
+    <input type="submit"  value="Guardar cambios" />
+    <p class="warnings" id="warnings"></p>
     </form>
     </div>
 
+    <script src="formulario.js"> </script>
     </body>
+   
 </html>
