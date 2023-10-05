@@ -103,3 +103,27 @@ form.addEventListener("submit", e => {
         parrafo.innerHTML=warnings;
     }
 });
+
+function disable(){
+    document.getElementById("gustoscolor").disabled = true;
+    document.getElementById("gustosmarca").disabled = true;
+    document.getElementById("gustosestilo").disabled = true;
+    document.getElementById("gustosmodelo").disabled = true;
+}
+
+function colordisable(){
+    var a=document.getElementsByClassName("gustos");
+	a[0].style.backgroundColor="#c7b68c";
+}
+
+function able(){
+    document.getElementById("gustoscolor").disabled = false;
+    document.getElementById("gustosmarca").disabled = false;
+    document.getElementById("gustosestilo").disabled = false;
+    document.getElementById("gustosmodelo").disabled = false;
+}
+
+function colorable(){
+    var a=document.getElementsByClassName("gustos");
+	a[0].style.backgroundColor="#ffe3b3";
+}
