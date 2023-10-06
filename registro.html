@@ -7,7 +7,7 @@
     
     <title>Formulario punto 1</title>
 </head>
-<body onload="disable();colordisable();">
+<body onload="disable();colordisable();slideOne();slideTwo();">
 
     <div id="division">
     <h3>Formulario</h3>
@@ -77,6 +77,23 @@
         <input id="gustosmodelo" type="text" name="modelofav" value="" size="50">
     </div>
 
+    </fieldset>
+    <br/>
+
+    <fieldset>
+        ¿Cuanto sería el valor maximo y minimo que esta dispuesto a pagar por un vehículo? <br/>
+        (Los valores están en Millones)
+        <div class="wrapper">
+            <div class="form_control">
+              <p id=range1></p>
+              <p id=range2></p>
+            </div>
+            <div class="container">
+              <div class="slider-track"></div>
+              <input type="range" min="0" max="200" value="75" id="slider-1" oninput="slideOne()">
+              <input type="range" min="0" max="200" value="150" id="slider-2" oninput="slideTwo()">
+            </div>
+          </div>
     </fieldset>
     <br/>
 
